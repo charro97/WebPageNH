@@ -1,0 +1,52 @@
+/*Estilos aplicados al fondo del home*/
+
+.fondo {
+    background-image: $fondo1000;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 415px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: $fondo_imagen;
+
+   
+
+    h1 {
+        color: $color_principal;
+        text-shadow: 0 0 2px $color_titulo;
+
+        @include laptop1 {
+            font-size: 18px;
+        }
+
+        @include tablet2 {
+            font-size: 14px;
+        }
+
+        @include phone2 {
+            font-size: 13px;
+        }
+    
+    }
+
+
+    @include desktop1 {
+        background-image: $fondo1300;
+        height: 554px;
+    }
+
+    @include laptop1 {
+        background-image: $fondo700;
+        height: 298px;
+    }
+
+    @include tablet1 {
+        background-image: $fondo550;
+        height: 234px;
+    }
+
+    @include tablet2 {
+        background-image: $fondo400;
+        height: 171px;
+    }
+}

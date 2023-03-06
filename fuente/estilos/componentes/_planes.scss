@@ -1,0 +1,56 @@
+/*Estilos aplicados a los planes del home*/
+
+.titulo {
+    color: $color_titulo;
+    font-size: $big_size;
+    text-shadow: 1px 1px 1px $color_titulo;
+
+    @include laptop1 {
+        font-size: $medium_size;
+    }
+}
+
+.planes {
+    margin: $small_margin 10%;
+
+}
+
+.plan {
+    background-color: $fondo_div;
+    border-radius: 4px;
+    padding: 1%;
+    box-shadow: $sombra;
+
+    
+    img{
+        border-radius: 2px;
+        margin-top: $normal_margin;
+    }
+
+    h2 {
+        color: $color_titulo_small;
+        font-size: 20px;
+        margin-bottom: $small_margin;
+    }
+    
+    p {
+        margin: $small_margin $normal_margin;
+    }
+
+
+    @include desktop1 {
+        width: 450px;
+    }
+
+    @include laptop1 {
+        width: 400px;
+    }
+
+    @include laptop2 {
+        width: 380px;
+    }
+
+    @include phone2 {
+        width: 300px;
+    }
+}

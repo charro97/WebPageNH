@@ -1,0 +1,93 @@
+@import "./mediaqueries";
+@import "./variables";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $fuente;  
+    background-color: $fondo_principal;
+    color: $color_principal;  
+}
+
+li{
+    list-style: none;
+    font-weight: bold;
+    
+}
+
+a {
+    text-decoration: none;
+    color: $color_principal;
+    font-size: $link_cabecera;
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+
+/*Estilos aplicados en la cabecera y menú de la web*/
+
+.cabecera {
+    background-color: $fondo_cabecera;
+    padding: 0 2rem;
+    box-shadow: $sombra_ligera;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .logo a {
+        font-size: $medium_size;
+        font-weight: bold;
+    }
+
+
+    .toggle_btn {
+        font-size: $medium_size;
+        cursor: pointer;
+    }
+
+    .ri-heart-2-fill {
+        font-size: 1.2rem;
+    }
+}
+
+.empieza_btn {
+    background-color: $color_boton;
+    color: $color_letras_boton;
+    padding: $small_size $estandar_size;
+    border-radius: 6px;
+    font-size: large;
+
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+    
+    background-color: white;
+    right: $big_size;
+    height: 0;
+    top: 60px;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s;
+
+
+    &.open {
+        height: 200px;
+    }
+
+    li {
+        padding: 0.7rem $small_size;
+    }
+
+    .empieza_btn {
+        width: 80%;
+    }
+  
+}

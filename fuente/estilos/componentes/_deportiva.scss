@@ -1,0 +1,65 @@
+/*Estilos aplicados a la nutricion deportiva de la pagina alimentate bien*/
+
+.tituloD {
+
+    h1 {
+        color: $color_titulo;
+        font-size: $big_size;
+        text-shadow: 1px 1px 1px $color_titulo;
+
+        @include phone1 {
+            font-size: 1.2em;
+        }
+    }
+
+    h3 {
+        color: $color_titulo_small;
+        font-size: $medium_size;
+
+
+        @include phone1 {
+            font-size: 1.2em;
+        }
+    }
+}
+
+.deportiva {
+
+    .objetivo {
+        width: 360px;
+
+        h2 {
+            font-size: 1.2rem;
+
+            @include laptop1 {
+                font-size: $estandar_size;
+            }
+
+            @include tablet2 {
+                font-size: 0.8em;
+            }
+
+            @include phone1 {
+                font-size: $estandar_size;
+            }
+        }
+
+    }
+
+    .objetivo1 h2 {
+        color: rgba(182, 164, 0, 0.993);
+        
+    }
+    
+    .objetivo2 h2 {
+        color: $color_titulo;
+        
+    }
+    
+    .objetivo3 h2 {
+        color: rgba(83, 42, 42, 0.952);
+        
+    }
+
+}
+

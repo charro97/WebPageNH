@@ -1,0 +1,69 @@
+/*Estilos aplicados a los nutrientes de la pagina alimentate bien*/
+
+.tituloN h1 {
+    color: $color_titulo;
+    font-size: $big_size;
+    margin-top: $normal_margin;
+    text-shadow: 1px 1px 1px $color_titulo;
+
+    @include laptop1 {
+        font-size: $medium_size;
+    }
+
+    @include phone1 {
+        font-size: 1.2em;
+    }
+}
+
+
+.nutrientes {
+    margin: $small_margin 10%;
+   
+    .nutriente {
+        
+        .parrafo {
+            background-color: $fondo_div;
+            border-radius: 2px;
+            padding: 0% 2%;
+            width: 700px;
+
+            
+            
+            h3 {
+                color: $color_titulo_small;
+            }
+
+            p {
+                @include laptop1 {
+                    font-size: 0.9em;
+                }
+            }
+
+            @include laptop1 {
+                width: 500px;
+            }
+
+            @include tablet1 {
+                width: 370px;
+                padding: 0% 0%;
+            }
+
+            @include phone1 {
+                width: 250px;
+                padding: 0% 0%;
+            }
+        }
+
+        picture img{
+            border-radius: 4px;
+        }
+
+        @include tablet1 {
+            background-color: $fondo_div;
+            margin: $small_margin 10%;
+        }
+
+        
+    }
+    
+}

@@ -1,0 +1,32 @@
+.pie {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+
+    article {
+        text-align: center;
+    }
+    
+    
+    article ul li{
+        text-align: start;
+    }
+
+
+    @include tablet2 {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
+
+.email {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-evenly;
+
+}

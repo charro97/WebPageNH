@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/remixicon/fonts/remixicon.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../estilos/principal.scss">
+    <title>NutriHealthy</title>
+</head>
+<body>
+    <!--SECCIÓN DE LA CABECERA-->
+    <section class="cabecera">
+        <nav class="menu">
+            <div class="logo"><i class="ri-heart-2-fill"></i><a href="../index.html">NutriHealthy</a></div>
+            <ul class="items"> 
+                <li><a href="./alimentate.html">Aliméntate bien</a></li>
+                <li><a href="./soluciona.html">Soluciona tus problemas</a></li>
+            </ul>
+            <a href="./contacto.html" class="empieza_btn">¡Empecemos!</a>
+            <div class="toggle_btn">
+                <i class="ri-menu-line"></i>  
+            </div>
+        </nav>
+        
+        <nav class="dropdown_menu">
+            <li><a href="./alimentate.html">Aliméntate bien</a></li>
+            <li><a href="./soluciona.html">Soluciona tus problemas</a></li>
+            <li><a href="./contacto.html" class="empieza_btn">¡Empecemos!</a></li>
+        </nav>
+    </section>
+    <main class="main">
+        <section class="formulario">
+            <h1 class="titulo_form">Formulario de Contacto</h1>
+            <form action="#">
+                <div class="user_info">
+                    <div class="input_box">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div class="input_box">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos">
+                    </div>
+                    <div class="input_box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="input_box">
+                        <label for="telefono">Número de teléfono</label>
+                        <input type="text" id="telefono" name="telefono">
+                    </div>
+                    <div class="input_box">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto">
+                    </div>
+                    <div class="input_box">
+                        <label for="mensaje">Mensaje</label>
+                        <input type="text" id="mensaje" name="mensaje">
+                    </div>
+                </div>
+                <div class="gender_box">
+                    <span class="gender_title">Género</span>
+                    <div class="gender_category">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="submit_btn">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <!--SECCIÓN CON EL PIE DE LA PÁGINA-->
+        <section class="pie">
+          <article>
+            <h3>Contacto</h3>
+              <ul class="email">
+                <li><a href="https://www.google.com/intl/es/gmail/about/" target="_blank"><i class="ri-mail-line"></i></a></li>
+                <li><a href="https://www.google.com/intl/es/gmail/about/" target="_blank"><i class="ri-phone-fill"></i></a></li>
+              </ul>
+  
+          </article>
+  
+          <article>
+            <h3>Redes</h3>
+            <ul class="redes">
+              <li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-box-fill"></i></a></li>
+            </ul>
+          </article>
+  
+          <article class="creditos">
+            <h3>Política de privacidad</h3>
+            <p>&copy; 2023, NutriHealthy</p>
+              
+          </article>
+  
+      </section>
+      </footer>
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+        }
+    </script>
+</body>
+</html>

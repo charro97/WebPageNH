@@ -1,0 +1,35 @@
+/*Estilos aplicados al pie de la web*/
+
+.pie {
+    background-color: $fondo_pie;
+
+
+    article {
+        width: 25%;
+    }
+    
+    article h3 {
+        color: #000000;
+        font-size: 18px;
+        font-weight: bold;
+
+        @include tablet1 {
+            font-size: 15px;
+        }
+    }
+
+}
+
+.email {
+
+    li a{
+        font-size: $big_size;
+    }
+}
+
+.redes {
+    
+    li a{
+        font-size: $big_size;
+    }
+}

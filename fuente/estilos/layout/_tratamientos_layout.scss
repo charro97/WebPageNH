@@ -1,0 +1,21 @@
+.tratamientos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 20px;
+
+    @include laptop2 {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+
+.tratamiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include laptop2 {
+        justify-content: center;
+    }
+}

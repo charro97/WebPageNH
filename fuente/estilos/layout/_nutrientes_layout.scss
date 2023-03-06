@@ -1,0 +1,27 @@
+.tituloN h1 {
+    text-align: center;
+}
+
+
+.nutrientes {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .nutriente {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 50px;
+
+        @include tablet1 {
+            flex-flow: column nowrap;
+            align-items: center;
+            gap: 20px;
+        }
+
+        
+    }
+    
+}

@@ -1,0 +1,30 @@
+.titulo {
+    text-align: center;
+    
+}
+
+.planes {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 20px;
+
+    @include laptop1 {
+        flex-flow: row wrap;
+    }
+    
+    @include laptop2 {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include laptop2 {
+        justify-content: center;
+    }
+}

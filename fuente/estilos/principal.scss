@@ -1,0 +1,22 @@
+/*Archivo principal donde importamos todos los componentes y layout*/
+
+@import "componentes/header";
+@import "componentes/fondo";
+@import "componentes/planes";
+@import "componentes/tratamientos";
+@import "componentes/deportiva";
+@import "componentes/nutrientes";
+@import "componentes/formulario";
+@import "componentes/footer";
+@import "componentes/bootstrap_page";
+@import "componentes/variables";
+@import "componentes/mediaqueries";
+
+@import "layout/header_layout";
+@import "layout/fondo_layout";
+@import "layout/planes_layout";
+@import "layout/tratamientos_layout";
+@import "layout/deportiva_layout";
+@import "layout/nutrientes_layout";
+@import "layout/formulario_layout";
+@import "layout/footer_layout";

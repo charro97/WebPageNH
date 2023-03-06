@@ -1,0 +1,117 @@
+/*Estilos aplicados al formulario de contacto*/
+
+.main {
+    height: 100vh;
+
+    .formulario {
+        width: $ancho_completo;
+        max-width: 650px;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 28px;
+        margin: 0 28px;
+        border-radius: 10px;
+
+
+        .titulo_form {
+            font-size: $big_size;
+            font-weight: bold;
+            padding-bottom: 6px;
+            color: #ffffff;
+            text-shadow: 2px 2px 2px #000000;
+            border-bottom: solid 1px #ffffff;
+        }
+
+        .user_info {   
+            padding: 20px 0;
+
+        
+            &::-webkit-scrollbar {
+                @include tablet2 {
+                    width: 0;
+                }
+            }
+
+            .input_box {
+                width: 50%;
+                padding-bottom: 15px;
+
+                label {
+                    width: 95%;
+                    color: #ffffff;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 5px 0;
+                }
+                
+                input {
+                    height: 40px;
+                    width: 95%;
+                    border-radius: 7px;
+                    outline: none;
+                    border: 1px solid grey;
+                    padding: 0 10px;
+                
+                }
+
+                @include tablet2 {
+                    margin-bottom: 12px;
+                    width: $ancho_completo;
+                }
+            }
+
+            @include tablet2 {
+                max-height: 380px;
+                overflow: auto;
+            }
+            
+        }
+
+        .gender_box {
+
+            .gender_title {
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+                border-bottom: 1px solid #ffffff;
+            }
+
+            .gender_category {
+                margin: 15px 0;
+                color: #ffffff;
+
+                label {
+                    padding: 0 20px 0 5px;
+                }
+
+                @include tablet2 {
+                    width: $ancho_completo;
+                }
+            }
+
+        }
+
+        .submit_btn {
+            margin-top: 40px;
+
+            input {
+                cursor: pointer;
+                width: $ancho_completo;
+                margin-top: 10px;
+                font-size: 20px;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                color: #ffffff;
+                background: rgba(63, 114, 76, 0.7);
+
+                &:hover {
+                    background: rgba(41, 156, 70, 0.7);
+                }
+            }
+        }
+
+        @include tablet2 {
+            min-width: 280px;
+        }
+    }
+}

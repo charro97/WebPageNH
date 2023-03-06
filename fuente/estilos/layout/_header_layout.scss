@@ -1,0 +1,58 @@
+.cabecera {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .items {
+        display: flex;
+        gap: 2.5rem;
+
+        @include tablet1 {
+            display: none;
+        }
+    }
+
+    .toggle_btn {
+        display: none;
+
+        @include tablet1 {
+            display: block;
+        }
+    }
+
+}
+
+.empieza_btn {
+
+    @include tablet1 {
+        display: none;
+    }
+    
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+   
+    
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .empieza_btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    @include tablet1 {
+        display: block;
+    }
+    
+}

@@ -1,0 +1,54 @@
+/*Declaración de mediaqueries*/
+
+
+@mixin desktop1 {
+    @media screen and (min-width: 1680px){
+        @content;
+    }
+}
+
+
+@mixin desktop2 {
+    @media screen and (min-width: 1300px){
+        @content;
+    }
+}
+
+@mixin laptop1 {
+    @media screen and (max-width: 1200px){
+        @content;
+    }
+}
+
+@mixin laptop2 {
+    @media screen and (max-width: 1067px){
+        @content;
+    }
+}
+
+@mixin tablet1 {
+    @media screen and (max-width: 915px){
+        @content;
+    }
+}
+
+@mixin tablet2 {
+    @media screen and (max-width: 660px){
+        @content;
+    }
+}
+
+
+@mixin phone1 {
+    @media screen and (max-width: 470px){
+        @content;
+    }
+}
+
+@mixin phone2 {
+    @media screen and (max-width: 390px){
+        @content;
+    }
+}
+
+

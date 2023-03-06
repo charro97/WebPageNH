@@ -1,0 +1,87 @@
+/*Estilos aplicados a la pagina Soluciona tus problemas realizada con bootstrap*/
+
+.menu {
+    .itms{
+        margin-top: 17px;
+        margin-left: 8px;
+
+    }
+
+    .btn-outline-secondary {
+        background-color: $color_boton;
+        color: $color_letras_boton;
+        padding: 0.3rem 0.9rem;
+        border-radius: 6px;
+        font-size: large;
+        height: 37px;
+    }
+}
+
+
+.dropdown_menu {
+    .btn-outline-secondary {
+        background-color: $color_boton;
+        color: $color_letras_boton;
+        padding: 0.3rem 0.9rem;
+        border-radius: 6px;
+        font-size: large;
+        height: 37px;
+    }
+}
+
+.container {
+
+    .titulo_tr {
+        color: $color_titulo;
+        font-size: $big_size;
+        text-shadow: 1px 1px 1px $color_titulo;
+        margin-top: $normal_margin;
+
+        @include laptop1 {
+            font-size: $medium_size;
+        }
+
+        @include phone1 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .col {
+        border: 2px solid #f2f2f2;
+        border-radius: 4px;
+        box-shadow: $sombra_mediana;
+
+        h2 {
+            color: $color_titulo_small;
+            font-size: 20px;
+            margin-bottom: $small_margin;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 8%;
+
+            @include phone1 {
+                font-size: 1em;
+                margin: $normal_margin;
+            }
+        }
+
+        img {
+            border-radius: 2px;
+        }
+ 
+    }
+
+    .card {
+        box-shadow: $sombra_mediana;
+        margin-bottom: 6%;
+
+        .card-title {
+            color: $color_titulo_small;
+            font-size: 20px;
+            margin-bottom: $small_margin;
+            font-weight: bold;
+        }
+    }
+}

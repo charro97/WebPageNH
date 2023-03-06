@@ -1,0 +1,57 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .formulario {
+        
+        .titulo_form {
+            text-align: center;
+        }
+
+        .user_info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+
+            .input_box {
+                display: flex;
+                flex-wrap: wrap;
+                
+                &:nth-child(2n) {
+                    justify-content: end;
+
+                    @include tablet2 {
+                        justify-content: space-between;
+                    }
+                }
+
+                
+            }
+  
+        }
+
+        .gender_box {
+
+            
+
+            .gender_category {
+
+                @include tablet2 {
+                    display: flex;
+                    justify-content: space-evenly;          
+                }
+            }
+
+        }
+
+        .submit_btn {
+
+            input {
+                display: block;
+            }
+        }
+
+    }
+}

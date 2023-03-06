@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../node_modules/remixicon/fonts/remixicon.css">
+        <link
+          href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../estilos/principal.scss">
+        
+        <title>NutriHealthy</title>
+</head>
+<body>
+    <!--SECCIÓN DE LA CABECERA-->
+    <section class="cabecera">
+        <nav class="menu"">
+            <div class="logo"><i class="ri-heart-2-fill"></i><a href="../index.html">NutriHealthy</a></div>
+            <ul class="items itms"> 
+                <li><a href="./alimentate.html">Aliméntate bien</a></li>
+                <li><a href="./soluciona.html">Soluciona tus problemas</a></li>
+            </ul>
+            <a href="./contacto.html" class="empieza_btn btn btn-outline-secondary">¡Empecemos!</a>
+            <div class="toggle_btn">
+                <i class="ri-menu-line"></i>  
+            </div>
+        </nav>
+        
+        <nav class="dropdown_menu">
+            <li><a href="./alimentate.html">Aliméntate bien</a></li>
+            <li><a href="./soluciona.html">Soluciona tus problemas</a></li>
+            <li><a href="./contacto.html" class="empieza_btn btn btn-outline-secondary">¡Empecemos!</a></li>
+        </nav>
+    </section>
+
+    <section class="container">
+        <!--SECCIÓN CREADA CON BOOTSTRAP-->
+        <h1 class="d-flex justify-content-center titulo_tr">TRASTORNOS ALIMENTICIOS</h1>
+        
+        <div class="row">
+            <div class="col col-lg-6 bg-white d-flex flex-column align-items-center">
+                <h2>Anorexia nerviosa</h2>
+                <picture>
+                    <source type="image/jpg" media="(min-width:600px)" srcset="../img/anorexia400.jpg">
+                    <source type="image/jpg" media="(min-width:500px)" srcset="../img/anorexia330.jpg">
+                    
+                    <img src="../img/anorexia300.jpg" alt="imagen anorexia">
+                </picture> 
+                
+                
+                <p>
+                    La <b>anorexia nerviosa</b> se caracteriza por una restricción de la
+                    ingesta alimentaria, lo que da lugar a una considerable pérdida de peso que
+                    se mantiene por debajo del mínimo esperable para la edad, sexo o desarrollo evolutivo
+                    de cada paciente, hasta llegar en ocasiones a un estado grave de desnutrición.
+                </p>
+            </div>
+            <div class="col col-lg-6 bg-white d-flex flex-column align-items-center">
+                <h2>Bulimia nerviosa</h2>
+                <picture>
+                    <source type="image/jpg" media="(min-width:600px)" srcset="../img/bulimia400.jpg">
+                    <source type="image/jpg" media="(min-width:500px)" srcset="../img/bulimia330.jpg">
+                    
+                    <img src="../img/bulimia300.jpg" alt="imagen vomitando">
+                </picture> 
+                
+                
+                <p>La <b>bulimia nerviosa</b>  se caracteriza por episodios repetidos
+                    de ingesta excesiva de alimentos en un periodo corto de tiempo. Los pacientes bulímicos después de los atracones
+                    se provocan el vómito, emplean laxantes o hacen ayuno con el fin de compensar los atracones.
+                
+                </p>
+            </div>
+        </div>
+
+        <h1 class="d-flex justify-content-center titulo_tr">PROBLEMAS METABÓLICOS</h1>
+
+         <!--CARDS CREADAS CON BOOTSTRAP-->
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Intolerancia a la lactosa</h5>
+                    <p class="card-text">Las personas con <b>intolerancia a la lactosa</b> no pueden digerir la lactosa
+                        que contiene la leche y otros productos lácteos. Como consecuencia se produce diarrea, gases e hinchazón.
+                    </p>
+                </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Diabetes</h5>
+                    <p class="card-text">La <b>diabetes</b> es una enfermedad en la que los niveles de glucosa(azúcar) en sangre están muy elevados.
+                      
+                    </p>
+                </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Celiaquía</h5>
+                    <p class="card-text">La <b>enfermedad celíaca</b> es una enfermedad digestiva que daña el intestino delgado
+                        y altera la absorción de las vitaminas, minerales y distintos nutrientes que contienen los alimentos.
+                    </p>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!--SECCIÓN CON EL PIE DE LA PÁGINA-->
+        <section class="pie">
+          <article>
+            <h3>Contacto</h3>
+              <ul class="email">
+                <li><a href="https://www.google.com/intl/es/gmail/about/" target="_blank"><i class="ri-mail-line"></i></a></li>
+                <li><a href="https://www.google.com/intl/es/gmail/about/" target="_blank"><i class="ri-phone-fill"></i></a></li>
+              </ul>
+  
+          </article>
+  
+          <article>
+            <h3>Redes</h3>
+            <ul class="redes">
+              <li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-box-fill"></i></a></li>
+            </ul>
+          </article>
+  
+          <article class="creditos">
+            <h3>Política de privacidad</h3>
+            <p>&copy; 2023, NutriHealthy</p>
+              
+          </article>
+  
+      </section>
+      </footer>
+        
+    
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+        }
+    </script>
+</body>
+</html>
